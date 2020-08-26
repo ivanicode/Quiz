@@ -1,53 +1,53 @@
 <!DOCTYPE html>
     <head>
         <meta charset="UTF-8">
-        <style src="index.css"></style>
+        <link href="index.css" rel="stylesheet"></style>
     </head>
     <body>
         <div>
-            <div>
+            <div class="visible">
                 <h1>
                     Rozpoczynamy Quiz!
                 </h1>
                 <p>
                     Zapraszam Cię do odpowiedzenia na 5 prostych pytań. Żeby rozpocząć naciśnij "START".
                 </p>
-                <button>START</button>
+                <button onclick="makeVisible()">START</button>
             </div>
-            <div>
+            <div class="invisible not-touched">
                 <p>
                     Jak nazywa się stolica Włoch?
                 </p>
-                <input type="placeholder" id="rome"></input>
-                <button>Odpowiedz</button>
+                <input type="text" id="rome"></input>
             </div>
-            <div>
+            <div class="invisible not-touched">
                 <p>
                     Jak nazywa jajorodny ssak?
                 </p>
-                <input type="placeholder"></input>
-                <button>Odpowiedz</button>
+                <input type="text" id="mammals"></input>
             </div>
-            <div>
+            <div class="invisible not-touched">
                 <p>
                     Kraków leży na północy czy na południu Polski?
                 </p>
-                <input type="placeholder"></input>
-                <button>Odpowiedz</button>
+                <input type="text" id="krakow"></input>
             </div>
-            <div>
+            <div class="invisible not-touched">
                 <p>
                     Jak nazywa się najmniejszy kontynent?
                 </p>
-                <input type="placeholder"></input>
-                <button>Odpowiedz</button>
+                <input type="text" id="continent"></input>
             </div>
-            <div>
+            <div class="invisible not-touched">
                 <p>
                     Dokończ zdanie: "Być, albo nie..."
                 </p>
-                <input type="placeholder"></input>
-                <button>Odpowiedz</button>
+                <input type="text" id="sentence"></input>
+            </div>
+            <div class="invisible not-touched end">
+                <p>
+                    Gratulacje!
+                </p>
             </div>
         </div>
         <script src="index.js"></script>
