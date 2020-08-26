@@ -1,0 +1,13 @@
+.visible {
+    display: block;
+}
+
+.invisible {
+    display: none;
+}
+
+body {
+    margin-top: 300px;
+    text-align: center;
+    font-size: large;
+}
