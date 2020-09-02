@@ -14,7 +14,7 @@
                 </p>
                 <button onclick="makeVisible()">START</button>
             </div>
-            <div class="invisible not-touched">
+            <div class="invisible not-touched" id="example">
                 <p>Jak nazywa się stolica Włoch</p>
 
                 <input type="radio" id="paris" value="Paryż">Paryż
@@ -55,9 +55,13 @@
 
             </div>
             <div class="invisible not-touched end">
-                <p>
-                    Gratulacje!
-                </p>
+                <p id="congratz"></p>
+            </div>
+        </div>
+        <div class="modal invisible">
+            <div class="modal-content">
+                <button class="close-button">ok</button>
+                <p class="modal-text"></p>
             </div>
         </div>
         <script src="radiobutton.js"></script>
