@@ -14,70 +14,54 @@
                 </p>
                 <button onclick="makeVisible()">START</button>
             </div>
-            <div class="invisible not-touched">
+            <div class="invisible not-touched" id="example">
                 <p>Jak nazywa się stolica Włoch</p>
 
-                <input type="radio" id="paris">
-                <label for="paris">Paryż</label>
-
-                <input type="radio" id="berlin">
-                <label for="berlin">Berlin</label>
-
-                <input type="radio" id="rome">
-                <label for="rome">Rzym</label>
+                <input type="radio" id="paris" value="Paryż">Paryż
+                <input type="radio" id="berlin" value="Berlin">Berlin
+                <input type="radio" id="rome" value="Rzym">Rzym
+                
             </div>
             <div class="invisible not-touched">
                 <p>Jak nazywa się jajorodny ssak?</p>
 
-                <input type="radio" id="platypus">
-                <label for="platypus">Dziobak</label>
-
-                <input type="radio" id="jellyfish">
-                <label for="jellyfish">Meduza</label>
-
-                <input type="radio" id="salamander">
-                <label for="salamander">Salamandra</label>
+                <input type="radio" id="platypus" value="Dziobak">Dziobak
+                <input type="radio" id="jellyfish" value="Meduza">Meduza
+                <input type="radio" id="salamander" value="Salamandra">Salamandra
+                
             </div>
             <div class="invisible not-touched">
                 <p>Gdzie leży Kraków?</p>
 
-                <input type="radio" id="east">
-                <label for="east">Na wschodzie Polski</label>
+                <input type="radio" id="east" value="Na wschodzie Polski">Na wschodzie Polski
+                <input type="radio" id="south" value="Na południu">Na południu Polski
+                <input type="radio" id="sea" value="Nad Morzem Bałtyckim">Nad Morzem Bałtyckim
 
-                <input type="radio" id="south">
-                <label for="south">Na południu Polski</label>
-
-                <input type="radio" id="sea">
-                <label for="sea">Nad Morzem Bałtyckim</label>
             </div>
             <div class="invisible not-touched">
                 <p>Jak nazywa się najmniejszy kontynent na Ziemii?</p>
 
-                <input type="radio" id="australia">
-                <label for="australia">Australia</label>
+                <input type="radio" id="australia" value="Australia">Australia
+                <input type="radio" id="zeland" value="Nowa Zelandia">Nowa Zelandia
+                <input type="radio" id="polar" value="Antarktyda">Antarktyda
 
-                <input type="radio" id="zeland">
-                <label for="zeland">Nowa Zelandia</label>
-
-                <input type="radio" id="polar">
-                <label for="polar">Antarktyda</label>
             </div>
             <div class="invisible not-touched">
                 <p>Dokończ sentencję: "Być, albo nie... "</p>
 
-                <input type="radio" id="be">
-                <label for="be">być</label>
+                <input type="radio" id="be" value="być">być
+                <input type="radio" id="live" value="żyć">żyć
+                <input type="radio" id="run" value="uciekać">uciekać
 
-                <input type="radio" id="live">
-                <label for="live">żyć</label>
-
-                <input type="radio" id="run">
-                <label for="run">uciekać</label>
             </div>
             <div class="invisible not-touched end">
-                <p>
-                    Gratulacje!
-                </p>
+                <p id="congratz"></p>
+            </div>
+        </div>
+        <div class="modal invisible">
+            <div class="modal-content">
+                <button class="close-button">ok</button>
+                <p class="modal-text"></p>
             </div>
         </div>
         <script src="radiobutton.js"></script>
